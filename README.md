@@ -1,2 +1,2 @@
-# mandadata.com
-public website for mandadata.com 
+# rhizo.co
+public website for rhizo.co
