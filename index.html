@@ -1,25 +1,21 @@
 <!DOCTYPE html>
 <html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
   body,
   html {
     height: 100%;
     margin: 0;
+    background-color: #FAFAFA;
   }
 
   h1 {
     font-weight: normal;
-    color: white;
-    font-family: Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: 'Cabin', Helvetica, sans-serif;
     font-size: 2em;
-  }
-
-  .bgimg {
-    background-image: url('/fiber_optic_light.jpg');
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    position: relative;
   }
 
   .middle {
@@ -28,15 +24,31 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    min-width: 25em;
+  }
+
+  #cloud1 {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    max-width: 40%;
+  }
+
+  #cloud2 {
+    position: absolute;
+    bottom: 15%;
+    right: 0;
+    max-width: 40%;
   }
 </style>
 
 <body>
-  <div class="bgimg">
-    <div class="middle">
-      <h1>Coming Soon</h1>
-    </div>
+  <img id='cloud1' src="cloud1.svg" alt="a cloud" />
+  <div class="middle">
+    <img src="rhizo_logo.svg" alt="Rhizo" />
+    <h1>The world’s first data distribution platform</h2>
   </div>
+  <img id='cloud2' src="cloud2.svg" alt="another cloud" />
 </body>
 
 </html>
